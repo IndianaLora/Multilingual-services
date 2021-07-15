@@ -14,7 +14,7 @@ function NavBar() {
       <div className="wrapper">
         <div className="home">
           <a href="#home" className="logo">
-            Multilingual Services
+            Jorge's Portofolio
           </a>
         </div>
         <div className="wrapper-menu">
