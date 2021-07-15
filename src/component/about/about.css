@@ -1,0 +1,5 @@
+@import "../../App.css";
+.about{
+  color: var(--clr-secondary);
+    background-color:var(--bg-secondary-200);
+}

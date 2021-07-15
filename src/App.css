@@ -1,5 +1,31 @@
-*{
+:root {
+  --bg-primary:rgb(0, 0, 17);
+  --bg-primary-200:rgb(255, 255, 255);
+  --bg-secondary:rgb(255, 123, 0);
+  --bg-secondary-200:rgb(55, 143, 109);
+  --clr-primary:rgb(0, 0, 0);
+  --clr-secondary:rgb(255, 255, 255);
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+.app {
+  height: 100vh;
+}
+.sections {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color:var(--bg-primary-200) ;
+  position: relative;
+  top: 80px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.sections > *{
+  width: 100vw;
+  height: calc(100vh - 80px);
+  scroll-snap-align: start;
 }

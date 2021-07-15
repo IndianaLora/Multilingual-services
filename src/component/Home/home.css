@@ -1,0 +1,5 @@
+@import "../../App.css";
+
+.welcoming {
+  background-color: var(--bg-secondary);
+}
