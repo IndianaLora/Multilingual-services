@@ -1,5 +1,56 @@
 @import "../../App.css";
-.about{
+
+.text-right {
+  text-align: right;
+  overflow: hidden;
+}
+.bg-100 {
+  color: var(--clr-primary);
+  background-color: var(--bg-primary-200);
+}
+.bg-200 {
+  background-color: var(--bg-primary);
+}
+.bg-300 {
+  background-color: var(--bg-secondary);
+}
+.about-icon {
+  margin: 5rem auto;
+}
+.about {
   color: var(--clr-secondary);
-    background-color:var(--bg-secondary-200);
+  background-color: var(--bg-secondary-200);
+  overflow: hidden;
+}
+.about-container {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-container div {
+  width: 300px;
+  height: 400px;
+  margin: 5rem auto;
+  border: 5px solid black;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1;
+  }
+}
+@media screen and (max-width: 728px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .about-container {
+    margin-top: 10%;
+  }
 }
