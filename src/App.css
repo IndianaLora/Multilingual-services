@@ -26,8 +26,22 @@
 }
 #home{
   width: 100vw;
-  height: calc(80vh - 80px);
+  height: calc(100vh - 80px);
   scroll-snap-align: start;
+}
+@media (max-width:550px){
+  #home{
+    width: 100vw;
+    height: calc(150vh - 80px);
+    scroll-snap-align: start;
+  }
+}
+@media (min-width:1000px){
+  #home{
+    width: 100vw;
+    height: calc(80vh - 80px);
+    
+  }
 }
 .sections > *{
   width: 100vw;
