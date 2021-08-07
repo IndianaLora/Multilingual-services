@@ -7,14 +7,15 @@ import {
   Instagram,
   Facebook,
 } from "@material-ui/icons";
-
+import logo from "../../img/logo.jpeg";
 function NavBar() {
   return (
     <div className="nav">
       <div className="wrapper">
         <div className="home">
+          <img src={logo} className="logo-img" />
           <a href="#home" className="logo">
-            Jorge's Portofolio
+            Multilingual Services
           </a>
         </div>
         <div className="wrapper-menu">
@@ -35,10 +36,10 @@ function NavBar() {
         </div>
         <div className="social">
           <a href="">
-            <Facebook className="social-icon"/>
+            <Facebook className="social-icon" />
           </a>
           <a href="https://instagram.com/multilingual.service?utm_medium=copy_link">
-            <Instagram className="social-icon"/>
+            <Instagram className="social-icon" />
           </a>
         </div>
       </div>

@@ -5,98 +5,61 @@
   flex-direction: column;
   background-color: var(--bg-secondary);
 }
-
-.left {
-  flex:0.5;
-  overflow: hidden;
-}
-@media (min-width: 540px) {
-  .welcoming {
+@media (min-width: 1000px) {
+  .welcoming  {
     flex-direction: row;
   }
 }
-@media (min-width: 540px) {
-  .left {
-    flex: 0.7;
-  }
+.first-part {
+  overflow: hidden;
 }
-@media (min-width: 800px) {
-  .left {
-    flex: 0.7;
-  }
-}
-@media (min-width: 1100px) {
-  .left {
-    flex: 0.5;
+@media (min-width: 1000px) {
+  .first-part {
+    flex:0.5;
   }
 }
 .img-container {
-  margin: 3rem auto;
-  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+  margin: 5rem auto;
+  border: 5px solid var(--bg-primary);
   border-radius: 50%;
-  background-color: var(--bg-primary-200);
+  overflow: hidden;
 }
-@media (max-width: 540px) {
-  .img-container {
-    margin: 7rem auto;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-  }
+.img-container img {
+  width: 100%;
+  display: block;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .img-container {
     position: absolute;
     width: 500px;
     height: 500px;
-    margin-top: 5%;
     margin-left: 15%;
+    margin-top: 5%;
+    border: none;
     border-radius: 0%;
+    border-bottom: 5px solid black;
     overflow: hidden;
-    background-color: var(--bg-primary-200);
   }
 }
-.img-container img {
-  width: 100%;
-}
-.right {
-  flex:0.6;
+.second-part {
   overflow: hidden;
 }
-@media (min-width: 540px) {
-  .right {
-    flex: 0.5;
+@media (min-width: 1000px) {
+  .second-part {
+    flex:0.5;
   }
 }
-@media (min-width: 800px) {
-  .right {
-    flex: 0.3;
-  }
-}
-@media (min-width: 1100px) {
-  .right {
-    flex: 0.4;
-  }
-}
-.right p {
-  font-weight: bold;
+.intro-container p {
+  overflow: hidden;
+  padding: 15px;
   text-align: center;
- 
+  font-weight: bold;
 }
-.intro-container {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .intro-container {
-    margin: 10rem auto;
+@media (min-width: 1000px) {
+  .intro-container  {
+   width: 500px;
+   margin: 10rem auto;
   }
 }
-@media (min-width: 1100px) {
-  .intro-container {
-    margin: 10rem auto;
-    margin-left: 5%;
-    width: 500px;
-  }
-}
-
-

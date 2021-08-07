@@ -10,31 +10,65 @@
 }
 .bg-200 {
   background-color: var(--bg-primary);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
 }
+@media screen and (min-width: 1100px) {
+  .bg-200 {
+    margin-top: 40% !important;
+  }
+}
+
 .bg-300 {
+  color: black;
   background-color: var(--bg-secondary);
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
-.about-icon {
-  margin: 5rem auto;
+.text-center-header {
+  text-align: center;
+  color: black;
+  margin-top: 10%;
 }
-.about {
+.text-center {
+  text-align: center;
+  color: inherit;
+}
+#about {
   color: var(--clr-secondary);
-  background-color: var(--bg-secondary-200);
-  overflow: hidden;
 }
 .about-container {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
 }
 .about-container div {
-  width: 300px;
-  height: 400px;
+  width: 310px;
+  height: 450px;
   margin: 5rem auto;
-  border: 5px solid black;
-  border-radius: 10%;
+  padding: 15px;
+  border: 5px solid var(--clr-primary);
+  /* border-radius: 5%; */
+  overflow: hidden;
 }
-
+.about-container div img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  width: 250px;
+  height: 100px;
+}
+.about-container div p {
+  text-align: center;
+  font-weight: 700;
+}
+hr {
+  margin: 1rem auto;
+  height: 5px;
+  width: 150px;
+  background-color: rgb(73, 165, 119);
+}
 @media screen and (max-width: 800px) {
   .about-container {
     display: grid;
@@ -51,6 +85,19 @@
 }
 @media screen and (min-width: 1100px) {
   .about-container {
-    margin-top: 10%;
+    margin-top: 5%;
   }
+}
+.learn-more-btn {
+  background-color: rgb(52, 110, 91);
+  color: wheat;
+  font-weight: bold;
+  float: right;
+  width: 150px;
+  height: 50px;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+.learn-more-btn:hover {
+  background-color: var(--clr-primary);
 }

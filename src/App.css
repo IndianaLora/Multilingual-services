@@ -1,8 +1,8 @@
 :root {
   --bg-primary: rgb(0, 0, 17);
-  --bg-primary-200: rgb(255, 255, 255);
+  --bg-primary-200: rgb(52, 110, 91);
   --bg-secondary: rgb(255, 123, 0);
-  --bg-secondary-200: rgb(55, 143, 109);
+  --bg-secondary-200: rgb(255, 255, 255);
   --clr-primary: rgb(0, 0, 0);
   --clr-secondary: rgb(255, 255, 255);
 }
@@ -22,20 +22,12 @@
   position: relative;
   top: 80px;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
-#home {
-  width: 100vw;
-  height: calc(100vh - 80px);
-  scroll-snap-align: start;
+.sections > * {
+  width: 100%;
+  height: fit-content;
 }
-@media (max-width: 540px) {
-  #home {
-    width: 100vw;
-    height: calc(150vh - 80px);
-    scroll-snap-align: start;
-  }
-}
+
 @media (min-width: 1000px) {
   #home {
     width: 100vw;
@@ -45,17 +37,12 @@
 @media (min-width: 1000px) {
   #about {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: fit-content !important;
   }
 }
 @media (min-width: 1000px) {
-  #contact{
+  #contact {
     width: 100vw;
     height: calc(100vh - 80px);
   }
-}
-.sections > * {
-  width: 100vw;
-  height: calc(200vh - 80px);
-  scroll-snap-align: start;
 }
