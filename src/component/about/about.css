@@ -100,4 +100,6 @@ hr {
 }
 .learn-more-btn:hover {
   background-color: var(--clr-primary);
+
+  border-radius: 15%;
 }

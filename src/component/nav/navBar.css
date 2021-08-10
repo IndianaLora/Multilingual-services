@@ -42,7 +42,7 @@
   height: 60px;
 }
 @media (max-width: 600px) {
-  .logo {
+  .logo ,.logo-img {
     display: none;
   }
 }
